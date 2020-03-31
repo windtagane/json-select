@@ -15,7 +15,12 @@
     <p>Welcome to <%= title %></p>
 
     <select name="select_users" id="selectUsers">
-      <option value="" disabled selected>Veuillez chosir un utilisateur</option>
+	  <option value="" disabled selected>Veuillez chosir un utilisateur</option>
+	  
+	  <% for (const user in users) { %>
+		<option value="<%= users[user].id %>"><%= users[user].nom %></option>
+	  <% } %>
+	  
     </select>
 
     <div class="user-identity m-5">

@@ -5,23 +5,8 @@ $(document).ready(function() {
         showOneUser($(this).val());
     })
 
-    function listUsers() {
-        $.get("/users/list", function(res) {
-            let users = res.users;
-            let optionsSelectUsers;
-
-            users.forEach((user, index) => {
-                optionsSelectUsers += `<option value="${index}">${user.nom}</option>`;
-            });
-
-            selectUsers.html(optionsSelectUsers);
-            
-        })
-    }
-
-    function showOneUser(idxVal) {
-        $.get("/users/list", function(res) {
-            let user = res.users[idxVal];
+    function showOneUser(idVal) {
+        $.get(`/users/get/${idVal}`, function(user) {
             
             $("#display-user-name").html(user.nom);
             $("#display-user-age").html(user.age + " ans");
@@ -31,6 +16,5 @@ $(document).ready(function() {
             
         })
     }
-    
-    listUsers();
+
 })

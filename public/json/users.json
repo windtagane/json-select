@@ -1,23 +1,29 @@
 {
-    "users": [{
-        "nom": "Henry",
-        "age": 45,
-        "profession": "Moniteur de ski",
-        "email": "henry_golade@mail.fr",
-        "tel": "067894563"
-    },
-    {
-        "nom": "Martine",
-        "age": 64,
-        "profession": "Ingénieure mécanicienne",
-        "email": "martine_darkshadow@mail.fr",
-        "tel": "0612375485"
-    },
-    {
-        "nom": "Kévin",
-        "age": 26,
-        "profession": "Apiculteur",
-        "email": "kev.fan2pnl@mail.fr",
-        "tel": "0645721841"
-    }]
+    "users": {
+        "1": {
+            "id": 1,
+            "nom": "Henry PodBeurre",
+            "age": 15,
+            "profession": "élu",
+            "email": "henry_podbeurre@mail.fr",
+            "tel": "067894563"
+        },
+        "2": {
+            "id": 2,
+            "nom": "Emile Mitron",
+            "age": 40,
+            "profession": "Président",
+            "email": "emile.mitron@mail.fr",
+            "tel": "0612375485"
+        },
+        "3": {
+            "id": 3,
+            "nom": "Kévin Rann-d'ohm",
+            "age": 22,
+            "profession": "DJ à ses heures perdues",
+            "email": "kev.fan2pnl@mail.fr",
+            "tel": "0645721841"
+        }
+    }
 }
+
