@@ -1,0 +1,137 @@
+{
+    "cars": {
+        "1": {
+            "id": 1,
+            "nom": "Peugeot",
+            "modeles": {
+                "1" : {
+                    "id": 1,
+                    "nom": "208",
+                    "finition": "1.2 PureTech 82ch E6.c Allure 5p",
+                    "prix": "30000",
+                    "energie": "essence",
+                    "boiteDeVitesse": "manuelle",
+                    "puissance": "82"
+                },
+                "2" : {
+                    "id": 2,
+                    "nom": "508",
+                    "finition": "GT Line BlueHDi 160 ch S&S EAT8",
+                    "prix": "30000",
+                    "energie": "diesel",
+                    "boiteDeVitesse": "automatique",
+                    "puissance": "163"
+                },
+                "3" : {
+                    "id": 3,
+                    "nom": "3008",
+                    "finition": "II 2.0 BLUEHDI 150 S&S ALLURE",
+                    "prix": "27500",
+                    "energie": "diesel",
+                    "boiteDeVitesse": "manuelle",
+                    "puissance": "150"
+                }
+            }
+        },
+        "2": {
+            "id": 2,
+            "nom": "Renault",
+            "modeles": {
+                "1" : {
+                    "id": 1,
+                    "nom": "Megane CC",
+                    "finition": "2.0 16V 136CH EXCEPTION",
+                    "prix": "7000",
+                    "energie": "essence",
+                    "boiteDeVitesse": "manuelle",
+                    "puissance": "136"
+                },
+                "2" : {
+                    "id": 2,
+                    "nom": "Modus",
+                    "finition": "Dynamique Quickshift 1.2 16v 80 eco2",
+                    "prix": "7000",
+                    "energie": "essence",
+                    "boiteDeVitesse": "automatique",
+                    "puissance": "80"
+                },
+                "3" : {
+                    "id": 3,
+                    "nom": "Kadjar",
+                    "finition": "Kadjar TCe 130 Energy Intens",
+                    "prix": "15000",
+                    "energie": "essence",
+                    "boiteDeVitesse": "manuelle",
+                    "puissance": "130"
+                }
+            }
+        },
+        "3": {
+            "id": 3,
+            "nom": "Opel",
+            "modeles": {
+                "1" : {
+                    "id": 1,
+                    "nom": "Corsa",
+                    "finition": "1.2 70ch Essentia 3p",
+                    "prix": "8000",
+                    "energie": "essence",
+                    "boiteDeVitesse": "manuelle",
+                    "puissance": "70"
+                },
+                "2" : {
+                    "id": 2,
+                    "nom": "Grandland",
+                    "finition": "1.6 D 120ch ECOTEC Innovation",
+                    "prix": "22000",
+                    "energie": "diesel",
+                    "boiteDeVitesse": "manuelle",
+                    "puissance": "120"
+                },
+                "3" : {
+                    "id": 3,
+                    "nom": "Agila",
+                    "finition": "1.0 - 68 ch Edition",
+                    "prix": "7300",
+                    "energie": "essence",
+                    "boiteDeVitesse": "manuelle",
+                    "puissance": "68"
+                }
+            }
+        },
+        "4": {
+            "id": 4,
+            "nom": "Citroën",
+            "modeles": {
+                "1" : {
+                    "id": 1,
+                    "nom": "C6",
+                    "finition": "V6 HDI 240 FAP EXCLUSIVE BVA",
+                    "prix": "18000",
+                    "energie": "diesel",
+                    "boiteDeVitesse": "automatique",
+                    "puissance": "240"
+                },
+                "2" : {
+                    "id": 2,
+                    "nom": "Spacetourer",
+                    "finition": "XL BlueHDi 150ch Feel S&S E6.d-TEMP",
+                    "prix": "36500",
+                    "energie": "diesel",
+                    "boiteDeVitesse": "manuelle",
+                    "puissance": "150"
+                },
+                "3" : {
+                    "id": 3,
+                    "nom": "E-Mehari",
+                    "finition": "Electrique Hard Top",
+                    "prix": "14000",
+                    "energie": "électrique",
+                    "boiteDeVitesse": "automatique",
+                    "puissance": "68"
+                }
+            }
+        }
+    }
+}
+

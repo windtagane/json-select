@@ -12,41 +12,10 @@
 	</head>
 	<body>
 
-		<div class="container w-50" style="max-width: 25rem;">
-			<div class="form-group">
-				<label for="select_users">Séléctionnez un utilisateur pour afficher ses informations</label>
-				<select  class="form-control" name="select_users" id="selectUsers">
-					<option value="" selected disabled>Veuillez chosir un utilisateur</option>
-
-					<% for (const user in users) { %>
-						<option value="<%= users[user].id %>" ><%= users[user].nom %></option>
-					<% } %>
-				</select>
-			</div>
-
-			<div class="user-identity" id="user-identity" style="display: none;">
-				<div class="card mb-3 d-flex justify-content-center">
-					<div class="card-header"> Utilisateur séléctionné </div>
-					<div class="card-body">
-						<h5 class="card-title"> <span id="display-user-name"></span>, <span id="display-user-age"></span> ans </h5>
-						<div class="card-text">
-							<p>
-								Profession:
-								<span id="display-user-job"></span>
-							</p>
-							<p>
-								Adresse mail:
-								<span id="display-user-email"></span>
-							</p>
-							<p>
-								Numéro de téléphone:
-								<span id="display-user-tel"></span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<ul>
+		<li><a href="/users">Users</a></li>
+		<li><a href="/cars">Cars</a></li>
+	</ul>
 
 		<!-- #### SCRIPTS #### -->
 		<script
