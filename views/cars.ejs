@@ -19,7 +19,7 @@
 					<option value="" selected disabled>Veuillez chosir une marque</option>
 
 					<% for (const index in cars) { %>
-						<option value="<%= cars[index].id %>" ><%= cars[index].nom %></option>
+						<option value="<%= cars[index].make_id %>" ><%= cars[index].make_display %></option>
 					<% } %>
 				</select>
 			</div>
@@ -78,6 +78,8 @@
 			crossorigin="anonymous"
 		></script>
 
+		<script type="text/javascript" src="http://www.carqueryapi.com/js/carquery.0.3.4.js"></script>
+		
 		<script src="/javascripts/scriptCars.js"></script>
 	</body>
 </html>
