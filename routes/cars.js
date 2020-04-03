@@ -48,7 +48,16 @@ var json = require('../public/json/cars.json');
 
 }) */
 
-router.get('/', function(req, res, next) {
+
+/**
+ * Rendu de la page d'accueil.
+ * Requête à carqueryapi pour récupérer la liste des constructeurs automobiles.
+ * @param  {string} '/' - url
+ * @param  {object} req
+ * @param  {object} res
+ * @returns render('cars') 
+ */
+router.get('/', function(req, res) {
   https.get('https://www.carqueryapi.com/api/0.3/?cmd=getMakes&year=2017', function(result) {
     let data = '';
     
@@ -68,7 +77,14 @@ router.get('/', function(req, res, next) {
   
 });
 
-router.get('/brands/:idbrand/models/', function(req, res, next) {
+/**
+ * Renvoie tout les modèles d'un constructeur automobile.
+ * @param  {string} /brands/:idbrand/models/
+ * @param  {object} req
+ * @param  {object} res
+ * @returns json
+ */
+router.get('/brands/:idbrand/models/', function(req, res) {
   let idBrand = req.params.idbrand
   
   https.get(`https://www.carqueryapi.com/api/0.3/?cmd=getModels&make=${idBrand}`, function(result) {
@@ -90,7 +106,14 @@ router.get('/brands/:idbrand/models/', function(req, res, next) {
   
 });
 
-router.get('/brands/:idbrand/models/get/:idmodel', function(req, res, next) {
+/**
+ * Renvoie tout les détails d'un modèle en fonction du constructeur et du modèle.
+ * @param  {string} /brands/idbrand/models/get/:idmodel
+ * @param  {object} req
+ * @param  {object} res
+ * @returns json
+ */
+router.get('/brands/:idbrand/models/get/:idmodel', function(req, res) {
   let reqidbrand = req.params.idbrand;
   let reqidmodel = req.params.idmodel;
 
